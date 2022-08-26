@@ -75,10 +75,11 @@ ul {
 
 .header {
     background-color: var(--color_white);
+    border-bottom: 1px solid #ECECEC;
 }
 
 .main_nav{
-    border-bottom: 1px solid #ECECEC;
+    
     display: flex;
     align-items: center;
     margin-right: auto;
@@ -105,10 +106,11 @@ font-family: 'Raleway';
 .link_nav {
     display: flex;
     margin-right: auto;
+    
 }
 
 .link_nav  a {
- 
+    display: inline-block; 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.15;
@@ -130,6 +132,7 @@ font-family: 'Raleway';
 
 
 .contact-link {
+    display: inline-block;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -142,10 +145,13 @@ font-family: 'Raleway';
 }
 .adrress_ul {
     display: flex;
+    
 }
 
 .adrress_ul li {
-margin-right: 50px;
+    
+    margin-right: 50px;
+
 }
 
 .adrress_ul li:last-child {
@@ -168,6 +174,20 @@ margin-right: 50px;
     color: var(--brand_style);
 }
 
+
+/* HEADER Icons*/
+.header_icons {
+    margin-right: 10px;
+}
+.mail {
+    width: 16px;
+    height: 12px;
+}
+.phone {
+    width: 10px;
+    height: 16px;
+}
+
 /* MAIN*/
 
 /* Section #1*/
@@ -175,8 +195,17 @@ margin-right: 50px;
 .section_headline {
     background: var(--background_grey);
     padding-top: 200px;
-    padding-bottom: 200px;   
+    padding-bottom: 200px;
+    background-image: linear-gradient(to top,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+    url("../image/Hero_img.jpg");
+    
+
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+
 
 .section_headline div {
  
@@ -246,7 +275,62 @@ margin-right: 50px;
     margin-bottom: 0px;
 }
 
+/* ---Section icons---*/
 
+.our_benefits_icon {
+    display: flex;
+}
+
+.our_benefits_icon li {
+    display: block;
+    width: 270px;
+    padding: 25px 100px 25px 100px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.our_benefits_icon li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.s2_li_icon {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+/*
+.our_benefits li::before {
+    content: '';
+    display: block;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_antenna::before {
+    background-image: url(../image/symbol-defs.svg#icon_antenna);
+}
+
+.icon_clock::before {
+    background-image: url(../image/clock.svg);
+}
+
+.icon_diagram::before {
+    background-image: url(../image/diagram.svg);
+}
+
+.icon_astronaut::before {
+    background-image: url(../image/astronaut.svg);
+}
+*/
+
+/* ------ */
 
 .our_benefits h3 {
      
@@ -269,9 +353,12 @@ margin-right: 50px;
         
 }
 
-.our_benefits li{
+.our_benefits li:not(:last-child) {
 margin-right: 30px;
-width: 270px;
+}
+
+.our_benefits li {
+    width: 270px;
 }
 
 
@@ -382,6 +469,10 @@ ul h3 {
     
 }
 
+/*---Section 4 icons---*/
+
+/* ----- */
+
 /*--Portfolio--*/
 .section_portf_btn {
     padding: 94px 0px 94px 0px;
@@ -391,7 +482,7 @@ ul h3 {
 .pf_btn {
 display: flex;
 margin: 0px auto 34px auto;
-width: 575px;
+justify-content: center;
 }
 
 .pf_btn li {
@@ -500,6 +591,10 @@ margin-right: 8px;
     padding: 0;
 }
 
+.adrress_ul_foot li:last-child {
+    margin-bottom: 0px;
+}
+
 .adrress_ul_foot {
     margin: 0;
 }
@@ -516,21 +611,6 @@ margin-right: 8px;
 
 .contact-link_f:hover,
 .contact-link_f:focus {
-    color: var(--brand_style);
-}
-
-.foot_cont_link {
-    font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.16;
-        letter-spacing: 0.02em;
-        color: var(--color_grey);
-        cursor: pointer;
-}
-
-.foot_cont_link:hover,
-.foot_cont_link:focus {
     color: var(--brand_style);
 }
 
