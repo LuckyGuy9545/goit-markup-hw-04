@@ -280,6 +280,13 @@ font-family: 'Raleway';
 
 .our_benefits_icon {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--background_grey);
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 .our_benefits_icon li {
@@ -440,7 +447,6 @@ ul h3 {
 .our_team_socials {
     display: flex;
     justify-content: space-between;
-    width: 206px;
 }
 
 
@@ -615,9 +621,13 @@ margin-right: 8px;
         /* identical to box height, or 188% */
 
 }
+.our_jobs_link {
+    display: block; 
+}
 
-.our_jobs li:hover,
-.our_jobs li:focus {
+.our_jobs_link:hover,
+.our_jobs_link:focus {
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     /*background-color: var(--brand_style);*/
 }
@@ -691,7 +701,7 @@ margin-right: 8px;
 
 .footer_main .container {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .foot_adrress_block {
